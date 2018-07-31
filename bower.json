@@ -13,6 +13,7 @@
   "homepage": "https://github.com/qichaoch/ngStudy",
   "private": true,
   "dependencies": {
-    "angular": "^1.7.2"
+    "angular": "^1.7.2",
+    "html2canvas": "^0.4.1"
   }
 }
