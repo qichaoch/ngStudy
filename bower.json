@@ -1,0 +1,18 @@
+{
+  "name": "ngstudy",
+  "description": "lib dependencies for ngStudy project",
+  "main": "index.js",
+  "authors": [
+    "qichaoch@gmail.com"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularJs",
+    "study"
+  ],
+  "homepage": "https://github.com/qichaoch/ngStudy",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.7.2"
+  }
+}
