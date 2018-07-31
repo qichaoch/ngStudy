@@ -1,0 +1,1 @@
+debugMsg("defer_b.js is executed!");

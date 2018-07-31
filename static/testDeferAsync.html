@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>defer async test</title>
+    <script>
+      window.debugMsg = function(){
+        var msg = "";
+        for(var i=0, len=arguments.length; i<len; ++i){
+          msg += JSON.stringify(arguments[i]);
+        }
+        alert(msg);
+        console.log(msg);
+      };
+    </script>
+    <script type="text/javascript" src="js/deferAsync/a_a.js" async></script>
+    <script type="text/javascript" src="js/deferAsync/d_a.js" defer></script>
+    <script type="text/javascript" src="js/deferAsync/d_b.js" defer></script>
+    <script type="text/javascript" defer>
+      debugMsg("no src attribute and defer does not take effect!")
+      debugMsg(3);
+    </script>
+    <script type="text/javascript">
+      var script = document.createElement("script");
+      var src = "js/deferAsync/script_a.js";
+      script.onload = function(){
+        debugMsg(src + " onload callback!");
+      };
+      script.src = src;
+      var headerNode = document.getElementsByTagName("head")[0];
+      headerNode.appendChild(script);
+    </script>
+</head>
+<body>
+        <div class="text">Hello World</div>
+    <script type="text/javascript" src="js/deferAsync/a_b.js" async></script>
+    <script type="text/javascript">
+        console.log("this is normal inline js code!");
+        document.addEventListener("DOMContentLoaded", function() {
+            debugMsg('dom content loaded, ready state:', this.readyState);
+        }, false);
+
+        window.addEventListener('load', function() {
+            debugMsg('window loaded, dom ready state:', document.readyState);
+        }, false);
+    </script>
+</body>
+
+</html>

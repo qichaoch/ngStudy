@@ -1,2 +1,2 @@
 # ngStudy
-project for angularJs and js learning
+project for angularJs1.x and js learning
