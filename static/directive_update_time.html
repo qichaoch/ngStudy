@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Study</title>
+    <script type="text/javascript" src="/bc/angular/angular.js"></script>
+    <script type="text/javascript" src="/js/directive_update_time.js"></script>
+</head>
+<body ng-app="docsIsolateScopeDirective">
+
+<div ng-controller="Controller">
+	format: <input ng-model="format"/>
+	<br>
+	 Current time is: <span my-current-time="format"></span>
+</div>
+
+</body>
+
+</html>
