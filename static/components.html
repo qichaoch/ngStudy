@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Study</title>
+    <script type="text/javascript" src="/bc/angular/angular.js"></script>
+    <script type="text/javascript" src="/js/components_hero.js"></script>
+</head>
+<body ng-app="heroApp">
+
+<div ng-controller="MainCtrl as ctrl">
+  <b>Hero</b><br>
+  <hero-detail hero="ctrl.hero"></hero-detail>
+</div>
+
+</body>
+
+</html>

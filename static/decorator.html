@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Study</title>
+    <script type="text/javascript" src="/bc/angular/angular.js"></script>
+    <script type="text/javascript" src="/js/decorator.js"></script>
+    <style type="text/css">
+		li.warn { color: yellow; }
+		li.error { color: red; }
+		li.info { color: blue }
+		li.log { color: black }
+		li.debug { color: green }
+    </style>
+</head>
+<body ng-app="myServiceDecorator">
+
+<div ng-controller="Ctrl">
+  <h1>Logs</h1>
+  <my-log></my-log>
+</div>
+
+</body>
+
+</html>
