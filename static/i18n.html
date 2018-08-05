@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Study</title>
+    <script type="text/javascript">
+		window.debugMsg = function(){
+			console.log(JSON.stringify(arguments));
+		};
+    </script>
+    <script type="text/javascript" src="/bc/angular/angular.js"></script>
+    <script type="text/javascript" src="/bc/angular-translate/angular-translate.js"></script>
+    <script type="text/javascript" src="/bc/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script type="text/javascript" src="/lib/angular-translate-cqc-localstroage.js"></script>
+    <script type="text/javascript" src="/js/i18n.js"></script>
+</head>
+<body ng-app="cqcApp">
+
+<div ng-controller="MainCtrl">
+<!--
+	{{ name }}
+-->
+	{{ name | translate }}
+	<button ng-click="change()"></button>
+</div>
+
+</body>
+
+</html>
