@@ -19,6 +19,7 @@
     "angular-translate": "^2.18.1",
     "angular-translate-loader-static-files": "^2.18.1",
     "angular-route": "^1.7.3",
-    "angular-ui-router": "^1.0.20"
+    "angular-ui-router": "^1.0.20",
+    "jasmine-core": "jasmine#^3.2.1"
   }
 }

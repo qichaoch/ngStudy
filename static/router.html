@@ -12,6 +12,11 @@
 <div>
   <div ng-view>区块1</div>
 <div ng-view>区块2</div>
+    <!--&lt;!&ndash;   infinite loop   &ndash;&gt;-->
+    <!--<div ng-view>-->
+        <!--I am parent-->
+        <!--<div ng-view>I am child</div>-->
+    <!--</div>-->
 </div>
 
 </body>
